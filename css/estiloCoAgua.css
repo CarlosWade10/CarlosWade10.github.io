@@ -1,0 +1,301 @@
+body{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ display: flex;
+ /*background-color: rgb(4, 0, 61);*/
+ background-image: url(../img/oceanoMitad.jpg);
+ background-repeat: no-repeat;
+ background-size: 400vh; 
+}
+
+header{
+ color:white;
+ font-family: Arial; 
+}
+
+h1{
+ position: absolute;   
+ left: 8.3em; 
+ font-size: 50px;  
+}
+
+.imgOceanoContaminado{
+ margin-top: 10px;
+ margin-left: 10px;   
+}
+
+/*código para navBar*/
+.container{
+ /*background: blue;*/
+ width: 650px;
+ height: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 115px;
+ margin-left: 70px;    
+}
+
+nav{   
+ width: 650px;
+ height: 60px;
+ transition: 1s;
+ border-radius: 50px;
+ background-color: rgba(255, 255, 255, 0.30);
+ box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+ backdrop-filter: blur(20px);
+}
+
+ul{
+ display: flex;
+ align-items: center;   
+}
+
+nav ul li{
+ border-radius: 30px;
+ list-style: none;
+ display: inline-block;
+ padding: 3px 20px;
+ font-size: 18px;
+ z-index: 2;
+ cursor: pointer;
+ transition: color 0.5s, font-size 0.5s;
+}
+
+.T1{
+ text-decoration: none;
+ font-family: Arial;
+ z-index: 0;   
+ color: white;
+}
+
+
+/*nav ul li:after{
+ content: '';
+ background: #be0dc1;
+ width: 20vh; 
+ height: 8%;
+ border-radius: 30px;
+ position: absolute;
+ top: 235px;
+ transform: translate(-100%, -100%);
+ z-index: -1;  
+ opacity: 0;
+}*/
+
+nav ul li:hover{
+ font-size: 20px;
+ transition: 0.5s;
+ background-color: rgb(21, 106, 147);   
+}
+
+.T1:hover{
+ color: white;   
+}
+/*código para navBar*/
+
+/*código para texto descriptor*/
+.contenedorparrafo{
+ border-radius: 50px;
+ background-color: rgba(255, 255, 255, 0.30);
+ box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+ backdrop-filter: blur(20px);
+ height: 470px;
+ width: 700px;
+ position: absolute;
+ top: 40vh;
+ left: 23vw;
+ padding: 20px;
+}
+
+.p1{
+ font-family: Arial;
+ color: bisque;
+ text-align: justify;   
+}
+/*código para texto descriptor*/
+
+/*código para imagen hover 1*/
+.containerimgH1{
+ position: absolute;
+ left: 10px;
+ top: 45vh;   
+}
+
+.imagenH1 img{
+ height: 30vh;
+ width: 20vw;   
+}
+
+.textimgH1{
+ font-size: 1.5rem;
+ position: absolute;
+ bottom: 0.5vh;
+ left: 0.5px;
+ color: white;
+ background: rgb(21, 106, 147);
+ height: 188px;
+ width: 272px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: Arial;
+ opacity: 0.8;
+ visibility: hidden;   
+ text-decoration: none;
+}
+
+.containerimgH1:hover .textimgH1{
+ visibility: visible;   
+}
+/*código para imagen hover 1*/
+
+/*código para imagen hover 1*/
+.ConImgH2{
+ position: relative;   
+ top: 82vh;
+ right: -5vw;  
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+.TextimgH2 {
+ position: absolute;
+ color: white;
+ font-size: 18px;
+ text-decoration: none;
+ background-color: rgb(21, 106, 147);
+ height: 205px;
+ width: 251px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ opacity: 0.8;
+ visibility: hidden;
+ font-family: Arial;
+}
+
+
+.ConImgH2:hover .TextimgH2{
+ visibility: visible;   
+}
+/*código para imagen hover 1*/
+
+/*código imagenes deslizables*/
+.slidegeneral{
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ position: absolute;
+ top: 119vh;
+ left: 21vw; 
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+}
+
+.slider{
+ width: 800px;
+ height: 500px;
+ border-radius: 10px;
+ overflow: hidden; 
+ background-color: aliceblue;  
+}
+
+.slides{
+ width: 500%;
+ height: 500px;
+ display: flex;   
+}
+
+.slides input{
+ display: none;   
+}
+
+.slide{
+ width: 20%;
+ transition: 2s;   
+}
+
+.slide img{
+ width: 800px;
+ height: 500px;   
+}
+
+/*css para manual slide navigation*/
+.navigation-manual{
+ position: absolute;
+ width: 800px;
+ margin-top: -40px;
+ display: flex;
+ justify-content: center;
+}
+
+.manual-btn{
+ border: 4px solid white; /*rgb(21, 106, 147)*/
+ padding: 5px;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: 1s;   
+}
+
+.manual-btn:not(:last-child){
+ margin-right: 40px;   
+}
+
+.manual-btn:hover{
+ background: white;   
+}
+
+#radio1:checked ~ .first{
+ margin-left: 0;   
+}
+
+#radio2:checked ~ .first{
+ margin-left: -20%;   
+}
+
+#radio3:checked ~ .first{
+ margin-left: -40%;   
+}
+/*css para manual slide navigation*/
+
+
+/*css para automatic navigation
+.navigation-automatic{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;   
+   }
+   
+   .navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+   }
+   
+   .navigation-auto div:not(:last-child){
+    margin-right: 40px;   
+   }
+   
+   #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;   
+   }
+   
+   #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;   
+   }
+   
+   #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;   
+   }
+   css para automatic navigation*/
+   
+
+/*código imagenes deslizables*/

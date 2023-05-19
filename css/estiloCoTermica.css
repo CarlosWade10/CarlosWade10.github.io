@@ -1,0 +1,558 @@
+body {
+    background-color: rgb(156, 10, 10);
+    font-family: Arial;
+}
+
+.titulo {
+    position: absolute;
+    left: 37vw;
+    color: #fff;
+}
+
+.texto1 {
+    position: absolute;
+    top: 15vh;
+    left: 60px;
+    width: 90vw;
+    text-align: justify;
+    color: #fff;
+}
+
+
+/*código de flip card 1*/
+.cartas1 {
+    position: absolute;
+    top: 47vh;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: 0 20px 40px #000;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*código de flip card 1*/
+
+/*código de flip card 2*/
+.cartas2 {
+    position: absolute;
+    top: 47vh;
+    left: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2 {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card2 .face2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card2 .front2 {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card2 .front2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 .front2 h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card2 .back2 {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: 0 20px 40px #000;
+}
+
+.card2:hover .front2 {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card2:hover .back2 {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*código de flip card 2*/
+
+/*código de flip card 3*/
+.cartas3 {
+    position: absolute;
+    top: 47vh;
+    left: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card3 {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card3 .face3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card3 .front3 {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card3 .front3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3 .front3 h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card3 .back3 {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: 0 20px 40px #000;
+}
+
+.card3:hover .front3 {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card3:hover .back3 {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*código de flip card 3*/
+
+.texto2 {
+    position: absolute;
+    top: 110vh;
+    left: 60px;
+    color: #fff;
+}
+
+/*código de flip card 4*/
+.cartas4 {
+    position: absolute;
+    top: 125vh;
+    left: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card4 {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card4 .face4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card4 .front4 {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card4 .front4 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card4 .front4 h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card4 .back4 {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: 0 20px 40px #000;
+}
+
+.card4:hover .front4 {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card4:hover .back4 {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*código de flip card 4*/
+
+/*código de flip card 5*/
+.cartas5 {
+    position: absolute;
+    top: 125vh;
+    left: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card5 {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card5 .face5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card5 .front5 {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card5 .front5 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card5 .front5 h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card5 .back5 {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: 0 20px 40px #000;
+}
+
+.card5:hover .front5 {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card5:hover .back5 {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*código de flip card 5*/
+
+/*código de flip card 6*/
+.cartas6 {
+    position: absolute;
+    top: 125vh;
+    left: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card6 {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card6 .face6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card6 .front6 {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card6 .front6 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card6 .front6 h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card6 .back6 {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    box-shadow: 0 20px 40px #000;
+}
+
+.card6:hover .front6 {
+    transform: perspective(600px) rotateY(180deg); /* animation: rotateCard 2s ease;*/ 
+}
+
+.card6:hover .back6 {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*codigo de flip card 6*/
+
+/*
+@keyframes rotateCard {
+    0% {
+        transform: perspective(600px) rotateY(0);
+    }
+
+    50% {
+        transform: perspective(600px) rotateY(90deg);
+    }
+
+    100% {
+        transform: perspective(600px) rotateY(180deg);
+    }
+}*/
+
+.texto3{
+ position: absolute;   
+ top: 60vh;
+ right: 8vw;
+ width: 80vw;
+ height: 100px;
+ color: #fff;
+}
+
+/*código de círculo animado*/
+.botones1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute; 
+ top: 70vh;
+ right: 30vw;
+ min-height: 60vh;  
+}
+
+.menu{
+ position: relative;
+ width: 280px;
+ height: 280px;
+ display: flex;
+ justify-content: center;
+ align-items: center;   
+}
+
+.menu .toggle{
+ position: relative;
+ width: 60px;
+ height: 60px;
+ background: #fff;
+ border-radius: 50%;
+ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #000;
+ cursor: pointer;
+ font-size: 2em;
+ transition: 1.25s;
+ z-index: 1000;  
+}
+
+.menu.active .toggle{
+ transform: rotate(360deg);
+ box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #000, 
+ 0 0 0 8px #fff;   
+}
+
+.menu li{
+ position: absolute;
+ left: 0;
+ list-style: none;
+ transition: 0.5s;
+ transform: rotate(calc(360deg/8 * var(--i)));  
+ transform-origin: 140px; 
+ scale: 0;
+ transition-delay: calc(0.05s * var(--i));
+}
+
+.menu.active li{
+ scale: 1;   
+}
+
+.menu li a{
+ position: relative;
+ display: flex;   
+ transform: rotate(calc(360deg/-8 * var(--i))); 
+ width: 60px;
+ height: 60px;
+ background-color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ font-size: 1.75em;
+ color: var(--clr);
+ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+ transition: 0.5s;
+}
+
+.menu li:hover a{
+ font-size: 2.5em;
+ box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;   
+}
+/*código de círculo animado*/

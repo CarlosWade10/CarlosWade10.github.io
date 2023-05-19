@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definición</title>
+  <link rel="stylesheet" href="../css/estiloConcepto.css">
+</head>
+
+<body>
+  <header>
+    <img class="img1" src="../img/conocimiento.jpg">
+    <h1>¿Qué es la contaminación?</h1>
+  </header>
+
+  <div class="parrafo1">
+    <p>Podemos hablar de contaminación cuando en un entorno ingresan
+      elementos o sustancias que normalmente no deberían estar en él
+      y que afectan el equilibrio del ecosistema. Por ejemplo, en un
+      vaso de agua que creemos que está limpia hay algunos componentes
+      que pueden están ahí naturalmente en concentraciones mínimas,
+      como sustancias radioactivas. Pero el problema de la
+      contaminación comienza cuando los niveles de estos materiales
+      son muy altos.</p>
+
+    <p>Los agentes contaminantes pueden ser físicos, químicos o
+      biológicos y perjudican medios como el agua, el suelo o el
+      aire cuando se presentan en concentraciones muy elevadas. Estos
+      compuestos alternan las condiciones de los organismos que habitan
+      en ellos, generando problemas de salud o de seguridad, malestar e
+      incluso la muerte.</p>
+
+    <p>Esto ocurre con la contaminación atmosférica. El aire que
+      respiramos está compuesto, de manera natural, por nitrógeno,
+      oxígeno y otros gases que producen el efecto invernadero, como
+      el dióxido de carbono CC0 Public Domain. Sin embargo, con la
+      aparición de las fábricas y de vehículos que funcionan con
+      motores de combustión, se han aumentado las emisiones de
+      monóxido de carbono y los óxidos de azufre por la quema de
+      energías fósiles como la gasolina (que se deriva del petróleo),
+      el gas o el carbón.</p>
+
+    <p>Estos componentes naturalmente no deberían estar en la
+      atmósfera en tan elevadas concentraciones y por eso se
+      puede decir que el aire está contaminado, o que el efecto
+      invernadero se esté convirtiendo en un problema porque el
+      planeta se está calentando más de lo normal. De hecho, si
+      por un tiempo prolongado un ser vivo respira aire con un
+      alto contenido de estas sustancias puede morir por
+      envenenamiento.</p>
+  </div>
+
+  <!--código para navegador magic-->
+  <div=contenedorMagic>
+    <div class="navigation">
+      <ul>
+        <li class="list active">
+          <a href="bienvenida.html">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="text">home</span>
+          </a>
+        </li>
+        <!--<li class="list">
+          <a href="bienvenida.html">
+            <span class="icon">
+              <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </span>
+            <span class="text">anterior</span>
+          </a>
+        </li>-->
+        <li class="list">
+          <a href="CoAgua.html">
+            <span class="icon">
+              <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </span>
+            <span class="text">siguiente</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="creditos.html">
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="text">créditos</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+    </div>
+
+    <script>
+
+      const list = document.querySelectorAll('.list');
+      function activelink() {
+        list.forEach((item) => item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item) => item.addEventListener('click', activelink));
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--código para navegador magic-->
+
+</body>
+
+</html>

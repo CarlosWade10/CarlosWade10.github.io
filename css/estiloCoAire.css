@@ -1,0 +1,157 @@
+body{
+ background-color: #181818;   
+}
+.QueEs{
+ background-color: gray;
+ height: 300px;
+ width: 70vw;
+ padding: 10px; 
+ font-family: arial;
+ color: white; 
+ text-align: justify; 
+ position: relative;
+}
+
+.ContAire{
+position: absolute;
+left: 72.5vw;
+bottom: 10vh;
+height: 220px;
+}
+
+.tiposSustacias{
+ background-color: gray;
+ height: 300px;
+ width: 70vw;
+ padding: 10px; 
+ font-family: arial;
+ margin-top: 10px;
+ color: white;
+ text-align: justify;  
+ position: relative; 
+}
+
+.monoxCarbono{
+ position: absolute;
+ left: 73vw;
+ bottom: 29vh;
+ height: 120px;
+ width: 10vw;   
+}
+
+.DioxCarbono{
+ position: absolute;
+ left: 85vw;
+ bottom: 29vh;
+ height: 120px;
+ width: 10vw;   
+}
+
+.DioxNitro{
+ position: absolute;
+ left: 74vw;
+ bottom: 6vh;
+ height: 120px;
+ width: 20vw;   
+}
+
+.responsables{
+ background-color: gray;
+ height: 160vh;
+ width: 96vw;
+ padding: 10px; 
+ font-family: arial;
+ margin-top: 10px;
+ color: white;
+ text-align: justify;  
+ position: relative;    
+}
+
+.prevenir{
+    background-color: gray;
+    height: 35vh;
+    width: 96vw;
+    padding: 10px; 
+    font-family: arial;
+    margin-top: 10px;
+    color: white;
+    text-align: justify;  
+    position: relative;    
+}
+
+.menu{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 60vh;   
+}
+
+.menu ul{
+ position: relative;
+ transform: skewY(-15deg);   
+}
+
+.menu ul li{
+ position: relative;
+ list-style: none;
+ width: 200px;
+ background: #3e3f46;
+ padding: 15px;
+ z-index: var(--i);   
+}
+
+.menu ul li:hover{
+ background: #33a3ee;
+ transform: translateX(-50px);   
+}
+
+.menu ul li::before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -40px;
+ width: 40px;
+ height: 100%;
+ background: #2e3133;
+ transform-origin: right;
+ transform: skewY(45deg);  
+ transition: 0.5s; 
+}
+
+.menu ul li:hover::before{
+ background: #1f5378;   
+}
+
+.menu ul li::after{
+ content: '';
+ position: absolute;
+ top: -40px;
+ left: 0;
+ width: 100%;
+ height: 40px;
+ background: #35383e;
+ transform-origin: bottom;
+ transform: skewX(45deg);
+ transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+ background: #2982b9;   
+}
+
+.menu ul li a{
+ text-decoration: none;
+ color: #999;
+ display: block;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ transition: 0.5s;   
+}
+
+.menu ul li:hover a{
+ color: #fff;   
+}
+
+.menu ul li:last-child::after{
+ box-shadow: -100px 100px 20px rgba(0,0,0,1);   
+}

@@ -1,0 +1,361 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial;   
+}
+
+:root{
+ --bg: #2f323f;   
+}
+
+body{
+ min-height: 100vh;
+ background: var(--bg);   
+}
+
+.navigation{
+ position: fixed;
+ inset: 40px 0 40px 20px;
+ background: #fff;
+ width: 75px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.5s;   
+}
+
+.navigation.active{
+ width: 250px;   
+}
+
+.menuToggle{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 60px;
+ padding: 0 23px;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ cursor: pointer;   
+}
+
+.menuToggle::before{
+ content: '';
+ position: absolute;
+ width: 30px;
+ height: 2px;
+ background: #333;
+ transform: translateY(-8px);
+ transition: 0.5s;   
+}
+
+.navigation.active .menuToggle::before{
+ transform: translateY(0) rotate(45deg);   
+}
+
+.menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(8px);
+    box-shadow: 0 -8px 0 #333;
+    transition: 0.5s;   
+   }
+
+.navigation.active .menuToggle::after{
+ transform: translateY(0) rotate(-45deg);
+ box-shadow: 0 0 0 #333;   
+}
+
+.navigation ul{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+
+.navigation ul li{
+ list-style: none;
+ position: relative;
+ width: 100%;
+ height: 76px;
+ border-radius: 12px;
+ border: 8px solid transparent;
+ transition: 0.5s;   
+}
+
+.navigation ul li.active{
+ transform: translateX(30px);
+ background: var(--bg);   
+}
+
+.navigation ul li::before{
+content: '';
+position: absolute;
+top: -28px;
+right: 22px;
+width: 20px;
+height: 20px;
+background: transparent;
+border-bottom-right-radius: 20px;
+box-shadow: 6px 5px 0 5px var(--bg);
+transform: scale(0);
+transform-origin: bottom right;
+transition: 0.5s;
+}
+
+.navigation ul li.active::before{
+right: 22px;
+transform: scale(1);
+}
+
+.navigation ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    right: 22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 6px -3px 0 3px var(--bg);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: 0.5s;
+    }
+    
+    .navigation ul li.active::after{
+    right: 22px;
+    transform: scale(1);
+    }
+
+    .navigation ul li a{
+     position: relative;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     width: 100%;
+     text-align: center;
+     text-decoration: none;
+     z-index: 1000;   
+    }
+
+    .navigation ul li a .icon{
+     position: relative;
+     display: block;
+     min-width: 60px;
+     height: 60px;
+     border-radius: 10px;
+     background: #fff;
+     font-size: 1.75em;
+     line-height: 60px;
+     border: 6px solid transparent;   
+    }
+
+    .navigation ul li.active a .icon{
+     background: var(--clr);
+     color: #fff;   
+    }
+
+    .navigation ul li a .icon::before{
+     content: '';
+     position: absolute;
+     top: 12px;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: var(--clr);
+     filter: blur(8px);
+     opacity: 0;
+     transition: 0.5s;   
+    }
+
+    .navigation ul li.active a .icon::before{
+     opacity: 0.5s;   
+    }
+
+    .navigation ul li a .icon::after{
+     content: '';
+     position: absolute;
+     top: 10px;
+     left: -60px;
+     width: 15px;
+     height: 15px;
+     background: var(--clr);
+     border: 8px solid var(--bg);
+     border-radius: 50%;   
+    }
+
+    .navigation ul li a .text{
+     position: relative;
+     padding: 0 15px;
+     color: #333;
+     display: flex;
+     align-items: center;
+     height: 60px;
+     opacity: 0;
+     visibility: hidden;
+     transition: 0.5s;
+    }
+
+    .navigation.active ul li a .text{
+    visibility: visible;
+    opacity: 1;    
+    }
+
+    .navigation ul li.active a .text{
+     color: #fff;   
+    }
+
+    .titulo{
+     color: #fff;
+     position: absolute;
+     left: 40vw;
+     top: 30px;   
+    }
+
+    .texto1{
+     position: absolute;   
+     top: 130px;
+     left: 25vw;
+     height: 40vh;
+     width: 60vw;
+     text-align: justify;  
+     color: #fff; 
+    }
+
+    .texto1 img{
+     position: absolute;
+     margin-top: 20px;   
+    }
+
+    .texto2{
+     color: #fff;
+     position: absolute;   
+     top: 82vh;
+     left: 25vw;
+     height: 40vh;
+     width: 60vw;
+     text-align: justify;    
+    }
+
+    .texto2 p{
+     margin-top: 20px;   
+    }
+
+    .texto2 li{
+     margin-top: 20px;   
+    }
+
+    .texto2 img{
+     margin-top: 20px;
+     margin-left: 90px;   
+    }
+
+    .tarjetas{
+     position: absolute;
+     top: 155vh;
+     left: 18.5vw;
+     width: 80vw; 
+     height: 80vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .container{
+     background-attachment: fixed;
+     position: relative;
+     width: 1150px;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+    }
+
+    .container .card{
+     position: relative;
+     width: 300px;
+     height: 420px;
+     background: #fff;  
+     margin: 20px;
+     border-radius: 30px;
+     overflow: hidden;
+     box-shadow: 0 40px 25px; 
+     transition: 0.5s;
+    }
+
+    .container .card .circle{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     clip-path: circle(160px at center 0);
+     text-align: center;   
+    }
+
+    .container .card .circle h2{
+     color: #fff;
+     font-size: 4.5em;
+     padding: 30px 0;   
+    }
+
+    .container .card .content{
+     position: absolute;
+     bottom: 10px;
+     padding: 20px;
+     text-align: justify;
+    }
+
+    .container .card .content p{
+     color: #666;   
+    }
+
+    .container .card .content h2{
+     color: #666; 
+     text-align: center;  
+    }
+
+    .container .card .content a{
+     position: relative;
+     display: inline-block;
+     padding: 10px 20px;
+     background: #000;
+     color: #fff;
+     border-radius: 40px;
+     text-decoration: none;
+     margin-top: 20px;   
+    }
+
+    .container .card:nth-child(1) .circle,
+    .container .card:nth-child(1) .content a{
+     background-color: rgb(0, 26, 255);   
+    }
+
+    .container .card:nth-child(2) .circle,
+    .container .card:nth-child(2) .content a{
+     background-color: rgb(255, 0, 0);   
+    }
+
+    .container .card:nth-child(3) .circle,
+    .container .card:nth-child(3) .content a{
+     background-color: rgb(9, 255, 0);   
+    }
+
+    .card:hover{
+     transform: translateY(-30px);   
+    }
+
+    .container .card .content:hover p{
+     color: #000;   
+    }
+
+    .container .card .content:hover h2{
+        color: #000;   
+       }
